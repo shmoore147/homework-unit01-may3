@@ -23,34 +23,93 @@ return sum;
 // Input: an array of numbers
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
-var NumsGreaterThanTen = function(numsArray){
-  
+var arrayOfNumbers = [20, 30, 1, 2, 3];
+var numsGreaterThanTen = function(numsArray){
+var numsGreaterThanTen = [];
+for (var i = 0; i < numsArray.length; i++) {
+  var numberToCheck = numsArray[i]
+  // if the number is greater than ten
+  if (numberToCheck > 10) {
+  // then add it to the new array
+  numbersGreaterThanTen.push(numberToCheck);
+  }
 }
+return numbersGreaterThanTen;
+}
+numbersGreaterThanTen(arrayOfNumbers);
+
 
 // #3
 // Input: an array of numbers
 // Output: `true` if ALL numbers passed in are strictly greater than 10;
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
+// var arrayOfNumbers = [20, 30, 1, 2, 3];
 var allGreaterThanTen = function(numsArray){
-  // Your Code Here
+for (var i = 0; i > numsArray.length; i++) {
+if (numsArray[i] < 10) {
+  return false;
+}
+}
+return true;
 };
+
+// // var numberToCheck = numsArray[i] ;
+// // if the number is greater than ten
+// // if (numberToCheck > 10) {
+// // then the function should return "true"
+// numbersGreaterThanTen.push(numberToCheck);
+// }
+// }
+// var newArray = [];
+// return newArray;
+// };
+
+
+
+
+
+
+
 
 // #4
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
+var arrayOfWords = ['cat', 'dog', 'shuffle', 'running', 'crying'];
+
 var wordsWithAtLeastFiveLetters = function(words){
-  // Your Code Here
+var newArrayOfWordsWithFiveOrMoreLetters = [];
+for(var i = 0; i > words.length; i++) {
+    // if the word has more than five letters,
+if (words[i].length >= 5) {
+  results.push(words[i]);
+}
+  // output the word in a new array
+}
+return newArrayOfWordsWithFiveOrMoreLetters
 };
+wordsWithAtLeastFiveLetters(arrayOfWords)
+
+
+
 
 // #5
 // Input: an array of words
 // Output: `true` if ALL words start with the letter 'a' (case-insensitive),
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
+var arrayOfWords = ["apple", "candy", "color", "and", "glass"];
+
 var allStartingWithA = function(words){
-  // Your Code Here
+  for (var i = 0; i < words.length; i++) {
+    if (words[i]).slice(0,1) === "a" || words[i].slice(0,1) === "A"
+  }
+return false;
+}
+}
+return true;
 };
+
 
 // #6
 // Input: an array of words
